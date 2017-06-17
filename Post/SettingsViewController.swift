@@ -22,6 +22,13 @@ class SettingsViewController: UITableViewController {
         }
     }
     
+    @IBAction func TouchIDChanged() {
+        if Touch_ID_Status.isOn {
+            SwiftyPlistManager.shared.save(1, forKey: "Touch ID", toPlistWithName: "Post") { (err) in return }
+        } else {
+            SwiftyPlistManager.shared.save(0, forKey: "Touch ID", toPlistWithName: "Post") { (err) in return }
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

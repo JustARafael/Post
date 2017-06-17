@@ -23,6 +23,7 @@
 		A5BC22031EE6238D008E4038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5BC22011EE6238D008E4038 /* LaunchScreen.storyboard */; };
 		A5BC22101EE62AFA008E4038 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5BC220F1EE62AFA008E4038 /* GoogleService-Info.plist */; };
 		A5BC22121EE63FB1008E4038 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC22111EE63FB0008E4038 /* RegisterViewController.swift */; };
+		A5CE108A1EF56A760005E680 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CE10891EF56A760005E680 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		A5BC22041EE6238D008E4038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5BC220F1EE62AFA008E4038 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A5BC22111EE63FB0008E4038 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A5CE10891EF56A760005E680 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		B8E671758C502EB057BD25FE /* Pods-Post.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Post.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Post/Pods-Post.debug.xcconfig"; sourceTree = "<group>"; };
 		DD7EA7C17B0BC3E3B02E56FA /* Pods-Post.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Post.release.xcconfig"; path = "Pods/Target Support Files/Pods-Post/Pods-Post.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5CE108A1EF56A760005E680 /* LocalAuthentication.framework in Frameworks */,
 				A244EF3C8856A2B1862687F2 /* libPods-Post.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,8 +91,8 @@
 		A598D0651EEAFCB600BD5CD5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A5BC22111EE63FB0008E4038 /* RegisterViewController.swift */,
 				A5BC21FA1EE6238D008E4038 /* LoginViewController.swift */,
+				A5BC22111EE63FB0008E4038 /* RegisterViewController.swift */,
 				A5B928C71EE74C3800CD8DF4 /* SettingsViewController.swift */,
 				A5B928CB1EE79B3200CD8DF4 /* PostsViewController.swift */,
 				A5B928C91EE78F4600CD8DF4 /* FeedsViewController.swift */,
@@ -137,6 +140,7 @@
 		CB5F2D38392FF50195564FDE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A5CE10891EF56A760005E680 /* LocalAuthentication.framework */,
 				014E9707166C1F4F492F8D9B /* libPods-Post.a */,
 			);
 			name = Frameworks;

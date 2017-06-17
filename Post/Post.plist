@@ -9,12 +9,14 @@
 	<key>UID</key>
 	<string></string>
 	<key>Touch ID</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>Logout</key>
 	<integer>0</integer>
 	<key>Email</key>
-	<string></string>
+	<string>rafaellichen@gmail.com</string>
 	<key>Username</key>
 	<string></string>
+	<key>Password</key>
+	<string>password</string>
 </dict>
 </plist>
