@@ -65,7 +65,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             if result as? Int == 0 {
                 SwiftyPlistManager.shared.getValue(for: "Logout", fromPlistWithName: "Post") { (result, err) in
                     if result as? Int == 0 {
-                        print("check here")
                         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                         let viewController = mainStoryboard.instantiateViewController(withIdentifier: "MainInterface") as! UITabBarController
                         UIApplication.shared.keyWindow?.rootViewController = viewController
@@ -93,6 +92,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                         SwiftyPlistManager.shared.save(snapshot.value!, forKey: "Username", toPlistWithName: "Post") { (err) in return }
                         SwiftyPlistManager.shared.save(user!.uid, forKey: "UID", toPlistWithName: "Post") { (err) in return }
                     })
+                    SwiftyPlistManager.shared.save(self.Password_Login.text!, forKey: "Password", toPlistWithName: "Post") { (err) in return }
                     SwiftyPlistManager.shared.save(self.Email_Login.text!, forKey: "Email", toPlistWithName: "Post") { (err) in return }
                     SwiftyPlistManager.shared.save(0, forKey: "Logout", toPlistWithName: "Post") { (err) in return }
                     //SwiftyPlistManager.shared.save(0, forKey: "Touch ID", toPlistWithName: "Post") { (err) in return }
