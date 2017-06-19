@@ -43,7 +43,7 @@ class FeedsViewController: UIViewController, UICollectionViewDelegate, UICollect
         Refresher.addTarget(self, action: #selector(refreshFeeds), for: .valueChanged)
         CollectionView!.addSubview(Refresher)
     }
-    
+
     override func viewDidDisappear(_ animated: Bool) {
         changed = true
     }

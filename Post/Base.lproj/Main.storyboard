@@ -57,10 +57,10 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiE-MU-8p5">
-                                <rect key="frame" x="27" y="421" width="321" height="55"/>
+                                <rect key="frame" x="27" y="421" width="260" height="55"/>
                                 <color key="backgroundColor" red="0.24018955230712891" green="0.47942823171615601" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="321" id="VBx-ma-CB0"/>
+                                    <constraint firstAttribute="width" constant="260" id="VBx-ma-CB0"/>
                                     <constraint firstAttribute="height" constant="55" id="phJ-tM-po1"/>
                                 </constraints>
                                 <state key="normal" title="Log In">
@@ -82,19 +82,34 @@
                                     <segue destination="Wie-Rj-qXd" kind="show" id="hjh-wO-NfH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Oe-sd-iIO">
+                                <rect key="frame" x="287" y="421" width="61" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="XQJ-cV-G5v"/>
+                                    <constraint firstAttribute="width" constant="61" id="ctS-mg-hkn"/>
+                                </constraints>
+                                <state key="normal" image="Touch_ID"/>
+                                <connections>
+                                    <action selector="Touch_ID_Login" destination="BYZ-38-t0r" eventType="touchUpInside" id="SG6-nW-zmF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xsX-I4-S6B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="9F6-hu-LVo"/>
+                            <constraint firstItem="4Oe-sd-iIO" firstAttribute="top" secondItem="xsX-I4-S6B" secondAttribute="bottom" constant="179" id="MAF-3x-lWs"/>
                             <constraint firstItem="fiE-MU-8p5" firstAttribute="top" secondItem="xsX-I4-S6B" secondAttribute="bottom" constant="179" id="MKP-qa-Cfu"/>
                             <constraint firstItem="xsX-I4-S6B" firstAttribute="top" secondItem="NDQ-DK-wtw" secondAttribute="bottom" constant="11" id="MvG-j3-pGX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Oe-sd-iIO" secondAttribute="trailing" constant="11" id="N83-Hn-lAP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="s5t-Xp-ipb" secondAttribute="trailing" constant="11" id="OJN-oH-GRe"/>
                             <constraint firstItem="s5t-Xp-ipb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="R9O-pu-QYW"/>
                             <constraint firstItem="NDQ-DK-wtw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="151" id="W7Y-Xd-UUu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NDQ-DK-wtw" secondAttribute="trailing" constant="11" id="YcO-wL-rqC"/>
                             <constraint firstItem="fiE-MU-8p5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="cJa-9D-uCH"/>
+                            <constraint firstItem="s5t-Xp-ipb" firstAttribute="top" secondItem="4Oe-sd-iIO" secondAttribute="bottom" constant="11" id="fjT-TG-OPv"/>
+                            <constraint firstItem="4Oe-sd-iIO" firstAttribute="leading" secondItem="fiE-MU-8p5" secondAttribute="trailing" id="hqn-LM-ZvE"/>
                             <constraint firstItem="NDQ-DK-wtw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="hsE-eh-K6E"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fiE-MU-8p5" secondAttribute="trailing" constant="11" id="l65-My-lRl"/>
+                            <constraint firstItem="4Oe-sd-iIO" firstAttribute="leading" secondItem="fiE-MU-8p5" secondAttribute="trailing" id="pZ6-zI-7M8"/>
                             <constraint firstItem="s5t-Xp-ipb" firstAttribute="top" secondItem="fiE-MU-8p5" secondAttribute="bottom" constant="11" id="rbg-FF-vCw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xsX-I4-S6B" secondAttribute="trailing" constant="11" id="rt4-2r-AKd"/>
                         </constraints>
@@ -106,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-668" y="716"/>
+            <point key="canvasLocation" x="-668" y="715.59220389805103"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="w5s-BK-6Lj">
@@ -314,10 +329,10 @@
                             <tableViewSection headerTitle="Touch ID" id="zSQ-0K-wMe">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="inV-nN-NsR">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="inV-nN-NsR" id="2dY-m7-7nK">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Touch ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0f-ek-3qr">
@@ -348,10 +363,10 @@
                             <tableViewSection headerTitle="Logout" id="dwc-np-rhj">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gtz-9y-czd">
-                                        <rect key="frame" x="0.0" y="155.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="156" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gtz-9y-czd" id="vU9-jQ-iPv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yda-G5-prG">
@@ -739,5 +754,6 @@
         <image name="Feeds_WhiteBlack" width="32" height="32"/>
         <image name="Settings_Color" width="32" height="32"/>
         <image name="Settings_WhiteBlack" width="32" height="32"/>
+        <image name="Touch_ID" width="164" height="148"/>
     </resources>
 </document>
